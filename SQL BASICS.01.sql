@@ -1,0 +1,1 @@
+SELECT min(Unitprice) FROM Supermarket_sales;
