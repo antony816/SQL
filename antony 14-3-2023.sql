@@ -1,0 +1,15 @@
+SELECT count (Position) FROM HRDataset_v14 WHERE Position = "Production Technician I";
+SELECT count (GenderID) FROM HRDataset_v14 WHERE GenderID = "1";
+SELECT count (ManagerName) FROM HRDataset_v14 WHERE ManagerName = "Michael Albert";
+SELECT count (EmploymentStatus) FROM HRDataset_v14 WHERE EmploymentStatus ="Active";
+SELECT count (EmploymentStatus)  , MaritalDesc FROM HRDataset_v14 WHERE EmploymentStatus = "Active" and MaritalDesc = "Married";
+SELECT count (EmploymentStatus) , Salary FROM HRDataset_v14 WHERE EmploymentStatus = "Active" and (Salary <= 600000);
+SELECT max (Salary)FROM HRDataset_v14;
+SELECT (Position) FROM HRDataset_v14 WHERE Salary >= 250000;
+SELECT avg (Salary) FROM HRDataset_v14 ;
+SELECT (Position) FROM HRDataset_v14 WHERE Salary <= 69020.684887459;
+SELECT (Position) FROM HRDataset_v14 WHERE Salary <= 69020.684887459 and EmpSatisfaction<= 2;
+SELECT Employee_Name FROM HRDataset_v14 WHERE PerfScoreID>=3;
+SELECT EmpStatusID,Employee_Name FROM HRDataset_v14 WHERE EmpStatusID = 5;
+SELECT count (Department)FROM HRDataset_v14 WHERE Department = "IT/IS";
+SELECT Department, count (Department) FROM HRDataset_v14 GROUP by Department;
